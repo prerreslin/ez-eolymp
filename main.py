@@ -18,7 +18,8 @@ def get_test():
 
 @app.delete("/delete_test")
 def delete_test():
-    text = []
+    text.clear()
+    return text
 
 if __name__ == "__main__":
     run(app=app)
